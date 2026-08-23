@@ -5,7 +5,7 @@ import StreamList from './pages/StreamList';
 import Movies from './pages/Movies';
 import Cart from './pages/Cart';
 import About from './pages/About';
-import MovieSearch from './MovieSearch'; 
+import MovieSearch from './pages/MovieSearch'; 
 import './App.css';
 
 function App() {
@@ -20,6 +20,8 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/about" element={<About />} />
             <Route path="/search" element={<MovieSearch />} />
+            
+            <Route path="*" element={<div style={{padding: '2rem', textAlign: 'center'}}><h2>404 - Page Not Found</h2><p>The page you are looking for does not exist.</p></div>} />
           </Routes>
         </div>
       </div>
